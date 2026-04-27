@@ -16,6 +16,7 @@ public class atvd1 {
             System.out.println("o número é negativo");
         }
        
+        sc.close();
     }
 
 }

@@ -3,9 +3,9 @@ package hora_da_pratica;
 import java.util.Scanner;
 
 public class atvd4 {
-    
+
     public static void main(String[] args) {
-        
+
         Scanner sc = new Scanner(System.in);
 
         int n;
@@ -16,6 +16,7 @@ public class atvd4 {
             System.out.println(n * i);
         }
 
+        sc.close();
     }
 
 }

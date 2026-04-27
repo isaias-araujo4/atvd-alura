@@ -23,5 +23,6 @@ public class atvd2 {
             System.out.println( n2 + " é maior que: " + n1);
         }
 
+         sc.close();
     }
 }
