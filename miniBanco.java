@@ -44,18 +44,22 @@ public class miniBanco {
                     while (senha != senhaT) {
                         System.out.println("digite o valor que deseja tranferir");
                         valor = sc.nextDouble();
-                        System.out.println("digite sua senha");
-                        senhaT = sc.nextInt();
 
-                        if (senha == senhaT) {
-                            saldo -= valor;
-                            System.out.println("saldo atualizado");
-                            System.out.println(nome);
-                            System.out.println(saldo);
+                        if (valor <= saldo) {
+                            System.out.println("digite sua senha");
+                            senhaT = sc.nextInt();
+
+                            if (senha == senhaT) {
+                                saldo -= valor;
+                                System.out.println("saldo atualizado");
+                                System.out.println(nome);
+                                System.out.println(saldo);
+                            } else {
+                                System.out.println("senha incorreta, tente novamente");
+                            }
                         } else {
-                            System.out.println("senha incorreta, tente novamente");
+                            System.out.println("saldo insuficiente");
                         }
-
                     }
                     break;
 
